@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo $1 > /sys/class/power_supply/BAT0/charge_stop_threshold
+echo $2 > /sys/class/power_supply/BAT1/charge_stop_threshold
+echo $3 >/sys/class/power_supply/BAT0/charge_start_threshold
+echo $4 >/sys/class/power_supply/BAT1/charge_start_threshold
